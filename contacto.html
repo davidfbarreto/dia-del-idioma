@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/contacto.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <title>Contacto</title>
+</head>
+<body>
+    <header>
+        <h1>Día del Idioma</h1>
+    </header>
+
+    <nav>
+        <ul class="nav-list">
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="tabla.html">Tabla</a></li>
+            <li><a href="#">Contacto</a></li>
+        </ul>
+    </nav>
+
+
+    <h2>Si quieres recibir más información oprime el boton de <b>Más información de contacto</b></h2>
+
+    <!--el onclick lo que va a hacer es que al momento de dar click va a llamar la funcion "mostrar" que creamos en el javascript-->
+    <button class="boton" onclick="mostrar();">Más información de contacto</button> 
+
+    <div id="img">
+        
+        <img src="img/dia idioma.webp" alt="">
+
+        <!-- Formulario de inscripción -->
+        <form class="formulario">
+            <h2>Formulario de Inscripción</h2>
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" required>
+
+            <label for="apellido">Apellido:</label>
+            <input type="text" id="apellido" name="apellido" required>
+
+            <label for="contacto">Número de contacto:</label>
+            <input type="tel" id="contacto" name="contacto" required>
+
+            <button type="submit">Enviar</button>
+        </form>
+        <button class="boton" onclick="ocultar();">Ocultar</button>
+    </div>
+
+    <footer>
+        <ul>
+            <li><a href="#">Contacto</a></li>
+            <li><a href="#">Redes</a></li>
+            <li><a href="#">Otro</a></li>
+        </ul>
+        © 2025 Proyecto David Felipe Barreto Cruz
+    </footer>
+
+    <script src="js/contacto.js"></script>
+</body>
+</html>
